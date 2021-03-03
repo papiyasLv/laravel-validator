@@ -7,6 +7,13 @@ use Illuminate\Support\ServiceProvider;
 
 class ValidatorServiceProvider extends ServiceProvider
 {
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../resources/lang'  => resource_path('lang'),
+        ]);
+    }
+
     public function register()
     {
         $this->app->singleton('papiyas_validator', function ($app) {
