@@ -7,6 +7,7 @@ use App\Enums\ApiCodeEnum;
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Validator as BaseValidator;
+use Papiyas\Validator\Facades\Message;
 
 class Validator extends BaseValidator
 {
