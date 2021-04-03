@@ -11,7 +11,7 @@ use Papiyas\Validator\Facades\Message;
 
 class Validator extends BaseValidator
 {
-    private $failedStatus = ApiCodeEnum::failure;
+    private $failedStatus = ApiCodeEnum::FAILURE;
 
     public function getFailedStatus(): int
     {
